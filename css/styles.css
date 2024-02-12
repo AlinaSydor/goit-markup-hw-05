@@ -117,6 +117,7 @@ gap: 40px;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .container-one {}
@@ -298,12 +299,12 @@ gap: 24px;
     fill: #f4f4fd;
 }
 
-.icon-item :hover {background-color: #404BBF;}
-.icon-item :focus {
+.icon-link:hover {background-color: #404BBF;}
+.icon-link:focus {
     background-color: #404BBF;
 }
 
-.section-four {background-color: #F4F4FD;
+.section-four {
 padding-top: 120px;
 padding-bottom: 120px;}
 
@@ -333,7 +334,7 @@ padding-bottom: 120px;}
 
 .section-four-item:hover .item-payment-text
 {transform: translateY(0);}
-.section-four-list :hover {
+.section-four-list:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
 
 
@@ -464,3 +465,75 @@ gap: 16px;}
 .footer-icon-link:hover {background-color: #31D0AA;}
 .footer-icon-link:focus {background-color: #31D0AA;}
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal {
+    width: 408px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    padding: 24px;
+}
+.modal-close {
+    border-radius: 100%;
+    color: #2E2F42;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+}
+.modal-text {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-top: 24px;
+        margin-bottom: 16px;
+}
+.form {}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);;
+    border-radius: 4px;
+    padding-left: 38px;
+    outline: transparent;
+}
+.form-input:focus {
+    border-color: #4d5ae5;
+}
+.form-input:focus + .modal-icon {
+    fill: #4D5AE5;
+}
+.modal-field {
+margin-bottom: 26px;
+}
+.modal-label{
+    display: block;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17px;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        margin-bottom: 4px;
+}
+.modal-input-wrap {
+    position: relative;
+}
+.modal-icon {
+    fill: #2e2f42;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
