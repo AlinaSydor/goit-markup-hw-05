@@ -636,6 +636,7 @@ margin-bottom: 26px;
 .checkbox-policy {
     margin-left: 8px;
 }
+.modal-checkbox {margin-bottom: 24px;}
 .checkbox-policy:focus {background-color:  #404bbf;}
 .label-policy {margin-top: 16px;}
 .label-policy span {
