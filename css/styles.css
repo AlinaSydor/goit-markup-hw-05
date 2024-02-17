@@ -467,13 +467,18 @@ gap: 16px;}
 .footer-subscribe {
     margin-left: 80px;
 }
-.form-footer {}
+
 .text-subscribe {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #ffffff;
+}
+
+.form-footer {
+    display: flex;
+    gap: 24px;
 }
 .label-email {
     font-weight: 500;
@@ -491,6 +496,12 @@ gap: 16px;}
         height: 40px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: #2e2f42;
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 2;
+            letter-spacing: 0.04em;
+            color: #ffffff;
+            padding-left: 16px;
 }
 .subscribe-email::placeholder {
     font-weight: 400;
@@ -506,7 +517,7 @@ padding: 16px 8px;}
     align-items: center;
     border-radius: 4px;
         padding: 8px 24px;
-        max-width: 165px;
+        min-width: 165px;
         height: 40px;
         background-color: #4d5ae5;
         font-weight: 500;
@@ -517,7 +528,7 @@ padding: 16px 8px;}
             color: #ffffff;
             cursor: pointer;
             border: none;
-            margin-left: 24px;
+            margin-top: 16px;
 }
 .img-send {
     display: flex;
@@ -672,6 +683,7 @@ margin-bottom: 26px;
 .checkbox-policy:checked + .label-policy span {
     background-color: #404bbf;
     fill: #f4f4fd;
+    border: none;
 }
 .label-policy {
     font-weight: 400;
@@ -688,3 +700,25 @@ margin-bottom: 26px;
         text-decoration: underline;
         text-decoration-skip-ink: none;
     color: #4D5AE5;}
+.button-send {
+    display: block;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border-radius: 4px;
+        padding: 16px 32px;
+        min-width: 169px;
+        height: 56px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            background-color: #4d5ae5;
+            font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color: #ffffff;
+                border: none;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}    
