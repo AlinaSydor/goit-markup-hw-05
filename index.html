@@ -426,20 +426,22 @@
           <p class="text-subscribe">Subscribe</p>
           <form class="form-footer">
             <label for="subscribe-email" class="label-email">
-          <input
+              <input
                 type="email"
                 name="subscribe-email"
                 class="subscribe-email"
                 id="subscribe-email"
                 placeholder="E-mail"
               />
-              </label>
-              <button type="submit" class="button-subscribe">Subscribe
-                <svg class="img-send" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-              </form>
+            </label>
+            <button type="submit" class="button-subscribe">
+              Subscribe
+              <svg class="img-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -496,15 +498,29 @@
           </div>
           <div class="modal-field">
             <label for="user-comment" class="modal-label">Comment</label>
-              <textarea name="user-comment" id="user-comment" class="modal-textarea" placeholder="Text input"></textarea></div>
-              <div class="modal-checkbox">
-              <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="checkbox-policy visually-hidden">
-              <label for="user-privacy" class="label-policy"><span class="label-user-privacy">
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="checkbox-policy visually-hidden"
+            />
+            <label for="user-privacy" class="label-policy"
+              ><span class="label-user-privacy">
                 <svg class="done-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-done"></use>
-                </svg>
-              </span>I accept the terms and conditions of the
-                <a href="" class="link-policy">Privacy Policy</a></label>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="" class="link-policy">Privacy Policy</a></label
+            >
           </div>
           <button type="submit" class="button-send">Send</button>
         </form>
