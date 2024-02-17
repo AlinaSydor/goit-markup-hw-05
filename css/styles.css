@@ -595,11 +595,11 @@ padding: 16px 8px;
     background-color: #404BBF;
 border: none;}
 .modal-close:focus + .button-close {fill: #4D5AE5;}
-.modal-close:hover + .modal {
+.modal-close:hover .button-close {
     fill: #ffffff;
 }
 
-.modal-close:focus + .modal {
+.modal-close:focus .button-close {
     fill: #ffffff;
 }
 .button-close {
@@ -683,7 +683,12 @@ margin-bottom: 8px;
 }
 .modal-checkbox {margin-bottom: 24px;}
 .checkbox-policy:focus {background-color:  #404bbf;}
-.label-policy {margin-top: 16px;}
+.label-policy {margin-top: 16px;
+font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;}
 
 .label-user-privacy {
     display: inline-flex;
@@ -697,20 +702,12 @@ margin-bottom: 8px;
         margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-policy:checked + .label-user-privacy {
+.checkbox-policy:checked + .label-policy .label-user-privacy {
     background-color: #404bbf;
     fill: #f4f4fd;
     border: none;
 }
-.label-policy {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color:#8e8f99;
-    display: flex;
-    align-items: center;
-}
+
 
 .link-policy {
     line-height: 133%;
